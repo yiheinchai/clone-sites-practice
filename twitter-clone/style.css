@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #d9d9d9;
+  background-color: black;
+}
+
+.container {
+  width: 100vw;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+  border-bottom: 1px solid #2f3336;
+  background-color: black;
+}
+.header__profile {
+  margin-left: 0.5rem;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
+.header__section {
+  margin-left: 1.5rem;
+  font-family: "Open Sans";
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: inherit;
+}
+.header__img > * {
+  border-radius: 50%;
+  height: 2.3rem;
+}
+.header__magic svg {
+  height: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.content__post {
+  width: 100%;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  border: 1px solid #2f3336;
+}
+.content__profile {
+  grid-column: 1;
+}
+.content__profile > img {
+  height: 3rem;
+  border-radius: 50%;
+}
+.content__copy {
+  grid-column: 2;
+  padding: 0 0rem 0.8rem 0.8rem;
+  display: flex;
+  flex-flow: column;
+  font-family: "Open Sans";
+}
+.content__poster {
+  display: flex;
+  flex-flow: row;
+  overflow: hidden;
+}
+.content__poster > * {
+  padding-right: 2px;
+  overflow: hidden;
+}
+.content__name {
+  font-weight: 600;
+  font-size: 1rem;
+  flex: 1 11rem;
+}
+.content__verification, .content__options, .content__icon {
+  display: flex;
+  align-items: center;
+}
+.content__verification svg, .content__options svg, .content__icon svg {
+  height: 1.2rem;
+}
+.content__handle {
+  color: #6e767d;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.content__text {
+  margin-top: 4px;
+}
+.content__image img {
+  width: 95%;
+  margin-top: 1rem;
+  border-radius: 1rem;
+}
+.content__list {
+  list-style: none;
+  margin-top: 0.7rem;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+.content__list > * {
+  display: flex;
+  flex-flow: row;
+  color: #6e767d;
+  font-size: 0.8rem;
+}
+.content__list > * svg {
+  margin-right: 0.8rem;
+}
+
+.nav {
+  position: fixed;
+  padding: 0.5rem;
+  bottom: 0;
+  left: 0;
+  flex-flow: row;
+  width: 100%;
+  background-color: black;
+  border-top: 1px solid #2f3336;
+}
+.nav__list {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  list-style: none;
+}
+.nav .nav__element svg {
+  height: 1.7rem;
+}
+
+/*# sourceMappingURL=style.css.map */
